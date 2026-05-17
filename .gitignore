@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+Pert7.pdf
+.vscode/
