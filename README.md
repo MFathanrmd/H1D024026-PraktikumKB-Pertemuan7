@@ -40,11 +40,13 @@ Praktikum ini berfokus pada **klasifikasi spesies bunga Iris** menggunakan **Jar
 
 ```
 iris/
-├── Praktikum7.py       # Source code utama
-├── iris.data            # Dataset Iris
-├── bezdekIris.data      # Dataset Iris (alternatif)
-├── iris.names           # Deskripsi dataset
-└── Index                # Index file
+├── Praktikum7.py           # Source code utama
+├── iris.data               # Dataset Iris
+├── bezdekIris.data         # Dataset Iris (alternatif)
+├── iris.names              # Deskripsi dataset
+├── training_history.png    # Grafik training history
+├── confusion_matrix.png    # Confusion matrix hasil prediksi
+└── Index                   # Index file
 ```
 
 ## Fitur Program
@@ -72,6 +74,33 @@ pip install tensorflow pandas numpy scikit-learn matplotlib seaborn
 cd iris
 python Praktikum7.py
 ```
+
+## Hasil Percobaan
+
+### Evaluasi Model
+
+| Metrik | Nilai |
+|--------|-------|
+| **Accuracy** | **96.67%** |
+| **Loss** | **0.0980** |
+| **Data Testing** | 30 sampel |
+| **Prediksi Benar** | 29 / 30 |
+
+### Hasil Prediksi vs Label Asli
+
+```
+Prediksi  : [1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 1 2 2 2 0 0]
+Label Asli: [1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0]
+```
+> Keterangan: 0 = Iris-setosa, 1 = Iris-versicolor, 2 = Iris-virginica
+
+### Grafik Training History
+
+![Training History](iris/training_history.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](iris/confusion_matrix.png)
 
 ## Library yang Digunakan
 
